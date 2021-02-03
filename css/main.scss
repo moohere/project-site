@@ -15,7 +15,7 @@ body {
 
     h1 {
         font-size: 3em;
-        margin-top: 2em
+        margin-top: 2em;
     }
 }
 
@@ -41,9 +41,10 @@ body {
     left: -8%;
     animation: 3s slideRight forwards, fadeIn 5s ease;
     transform: translateX(-500%);
+    color:#18344A;
 }
 
-.nameText {
+.nameBlock {
     position: absolute;
     top: 52%;
     left: -19%;
@@ -52,9 +53,10 @@ body {
     animation: 5s slideRight forwards, fadeIn 10s ease;
     // animation: 1s fadeIn ease;
     transform: translateX(-500%);
+    color: #343956;
 
-    .colorText {
-        color: #173655
+    .nameText {
+        color: #1C3657
     }
 }
 
@@ -63,6 +65,7 @@ body {
         font-size: 2em;
         margin-top: 5em;
         margin-bottom: 0em;
+        color: #18344A;
     }
 }
 

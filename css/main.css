@@ -40,9 +40,10 @@ body {
   left: -8%;
   animation: 3s slideRight forwards, fadeIn 5s ease;
   transform: translateX(-500%);
+  color: #18344A;
 }
 
-.nameText {
+.nameBlock {
   position: absolute;
   top: 52%;
   left: -19%;
@@ -50,15 +51,17 @@ body {
   margin-top: 2em;
   animation: 5s slideRight forwards, fadeIn 10s ease;
   transform: translateX(-500%);
+  color: #343956;
 }
-.nameText .colorText {
-  color: #173655;
+.nameBlock .nameText {
+  color: #1C3657;
 }
 
 .content h1 {
   font-size: 2em;
   margin-top: 5em;
   margin-bottom: 0em;
+  color: #18344A;
 }
 
 .java {
