@@ -1,3 +1,3 @@
-document.getElementById("downBtn").addEventListener("click", e => {
-    window.scrollBy(0, 950);
+document.getElementById("downBtn").addEventListener("click", () => {
+    window.scroll(0, 950);
 })
