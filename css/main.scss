@@ -35,6 +35,37 @@ body {
     filter: drop-shadow(22px -12px 7px rgba(0,0,0,0.35))
 }
 
+.helloText {
+    position: absolute;
+    top: 32%;
+    left: -8%;
+    animation: 3s slideRight forwards, fadeIn 5s ease;
+    transform: translateX(-500%);
+}
+
+.nameText {
+    position: absolute;
+    top: 52%;
+    left: -19%;
+    font-size: 2em;
+    margin-top: 2em;
+    animation: 5s slideRight forwards, fadeIn 10s ease;
+    // animation: 1s fadeIn ease;
+    transform: translateX(-500%);
+
+    .colorText {
+        color: #173655
+    }
+}
+
+.content {
+    h1 {
+        font-size: 2em;
+        margin-top: 5em;
+        margin-bottom: 0em;
+    }
+}
+
 .java {
     top: 7%;
     left: 18%;
@@ -64,6 +95,7 @@ body {
     left: 40%;
     width: 8%;
     animation: downArrows 1s infinite alternate-reverse;
+    cursor: pointer;
 }
 
 @keyframes java {
@@ -99,5 +131,20 @@ body {
     }
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
