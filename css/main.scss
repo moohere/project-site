@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #e3ebea;
+}
+
+.container {
+    width: 60%;
+    margin: 8em auto;
+    text-align: center;
+
+    h1 {
+        font-size: 3em;
+        margin-top: 1em;
+    }
+    p {
+        font-size: 1.6em;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.stars {
+    clip-path: url(#starsmask);
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.stars-container {
+    position: relative;
+}
+
+.javascript, .java, .python {
+    position: absolute;
+    filter: drop-shadow(22px -12px 7px rgba(0,0,0,0.35))
+}
+
+.java {
+    top: 7%;
+    left: 18%;
+    width: 18%;
+    transform: rotate(-10deg);
+    animation: java 2s infinite alternate-reverse ease-in-out;
+}
+
+.javascript {
+    top: 36%;
+    left: 66%;
+    width: 10%;
+    transform: rotate(10deg);
+    animation: javascript 4s infinite alternate-reverse ease-in-out;
+}
+
+.python {
+    top: 82%;
+    left: 40%;
+    width: 12%;
+    transform: rotate(15deg);
+    animation: python 3s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes java {
+    from {
+        transform: translateY(15px) rotate(-10deg);
+    }
+    to {
+        transform: translateY(0) rotate(-15deg);
+    }
+}
+
+@keyframes javascript {
+    from {
+        transform: translateY(15px) rotate(10deg);
+    }
+    to {
+        transform: translateY(0) rotate(5deg);
+    }
+}
+
+@keyframes python {
+    from {
+        transform: translateY(15px) rotate(15deg);
+    }
+    to {
+        transform: translateY(0) rotate(5deg);
+    }
+}
