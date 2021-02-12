@@ -45,10 +45,6 @@ section h2 {
   animation: cloud-animate1 12s alternate-reverse infinite linear;
 }
 
-.rightMostClouds {
-  animation: cloud-animate2 30s alternate-reverse infinite linear;
-}
-
 .rightBirds {
   animation: birds-animate1 20s alternate-reverse infinite linear;
 }
