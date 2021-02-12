@@ -1,68 +1,121 @@
 html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
+  display: grid;
   margin: 0;
-  height: 100vh;
-  background: #e3ebea;
+  background: #75A6B4;
 }
 
 .container {
-  width: 50%;
-  margin: 5em auto;
+  height: 80%;
+  background: #E5EEEB;
+  text-align: center;
 }
 .container h1 {
-  font-size: 3em;
-  margin-top: 2em;
+  padding: 30px;
+  font-size: 5em;
+  margin: 0;
 }
 
-.stars {
-  clip-path: url(#starsmask);
-  width: 40%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
-
-.stars-container .images {
+section {
   text-align: center;
-  position: relative;
+  padding: 8em 0;
+}
+section h2 {
+  font-size: 3em;
+  margin-top: -100px;
 }
 
+.cloud1 {
+  animation: cloud-animate1 15s alternate-reverse infinite linear;
+}
+
+.cloud2 {
+  animation: cloud-animate1 17s alternate-reverse infinite linear;
+}
+
+.cloud3 {
+  animation: cloud-animate1 12s alternate-reverse infinite linear;
+}
+
+.rightMostClouds {
+  animation: cloud-animate2 30s alternate-reverse infinite linear;
+}
+
+.rightBirds {
+  animation: birds-animate1 20s alternate-reverse infinite linear;
+}
+
+.centerBirds {
+  animation: birds-animate2 20s alternate-reverse infinite linear;
+}
+
+.leftBirds {
+  animation: birds-animate3 20s alternate-reverse infinite linear;
+}
+
+.waves {
+  animation: waves-animate 20s alternate-reverse infinite linear;
+}
+
+@keyframes cloud-animate1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+@keyframes cloud-animate2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}
+@keyframes birds-animate1 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(-100px) translateY(100px);
+  }
+}
+@keyframes birds-animate2 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(125px) translateY(-50px);
+  }
+}
+@keyframes birds-animate3 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(-50px) translateY(-100px);
+  }
+}
+@keyframes waves-animate {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50px);
+  }
+}
 .javascript, .java, .python {
   position: absolute;
   filter: drop-shadow(22px -12px 7px rgba(0, 0, 0, 0.35));
-}
-
-.content {
-  text-align: center;
-}
-.content .downArrows {
-  margin-top: 10em;
-}
-
-.welcome {
-  position: relative;
-}
-
-.helloText {
-  margin: 0;
-  animation: 3s slideRight forwards, fadeIn 5s ease;
-  transform: translateX(-500%);
-  color: #18344A;
-}
-
-.nameBlock {
-  font-size: 2em;
-  animation: 5s slideRight forwards, fadeIn 10s ease;
-  transform: translateX(-500%);
-  color: #343956;
-}
-.nameBlock .nameText {
-  color: #1C3657;
-}
-.nameBlock .descText {
-  text-align: left;
 }
 
 .java {
